@@ -3,6 +3,7 @@
 # Date       : 07/18/18
 # Description: Movie Searching App running against movie_service.talkpython.fm
 #              that returns a list of movies based upon user search input
+#              Learned from Michael Kennedy's Python Jump Start Training Videos
 
 # Imports
 import movie_svc
