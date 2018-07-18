@@ -1,13 +1,17 @@
+# Imports
 import collections
 import requests
 
+# Named Tuples
 MovieResult = collections.namedtuple(
     "MovieResult",
     "imdb_code,title,duration,director,year,rating,imdb_score,keywords,genres")
 
 
+# Find Movies through URL Logic
 def find_movies(search_text):
 
+    # If blank, raise an exception
     if not search_text or not search_text.strip():
         raise ValueError("Search text is required")
 

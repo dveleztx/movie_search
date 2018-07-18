@@ -1,12 +1,21 @@
+# Program    : Movie Search App
+# Author     : David Velez
+# Date       : 07/18/18
+# Description: Movie Searching App running against movie_service.talkpython.fm
+#              that returns a list of movies based upon user search input
+
+# Imports
 import movie_svc
 import requests.exceptions
 
 
+# Main Function
 def main():
     print_header()
     search_event_loop()
 
 
+# Print the Header
 def print_header():
     print("------------------------")
     print("    Movie Search App")
@@ -14,6 +23,7 @@ def print_header():
     print()
 
 
+# Search Logic
 def search_event_loop():
     search = "ONCE_THROUGH_LOOP"
 
@@ -38,5 +48,6 @@ def search_event_loop():
     print("exiting...")
 
 
+# Main
 if __name__ == "__main__":
     main()
